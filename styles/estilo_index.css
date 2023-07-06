@@ -16,18 +16,18 @@ body{
 
 
 /************************************MENU******************************************/
-#imgNavBar{
+/*16 vh + 5 vh + 20vh + 132px*/
+#imgNavBar{ /* de altura e largura 132px*/ 
 	max-width: 90%;
-	margin-top: 10%;
-	background: lightyellow;
+	margin-top: 5vh;
+	background:#0f0f0f;
 	border-radius: 100%;
-	border: solid 2px white;
+	border: solid 1px white;
 }
 .centraliza_img{
 	text-align: center;
 }
 #nome{
-
 	opacity: 0.9;
 	font-size: 100%;
     font-family: Cascadia Code, Bahnschrift, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
@@ -60,14 +60,19 @@ nav{
 	text-decoration: none;
 }
 #opcoes > a > li {
+	list-style: none;
 	border: solid 1px #1f1f1f;
 	text-decoration: none;
 	color:white;
 	margin-top: 1vh;
 	margin-bottom: 1vh;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 5%;
 	padding-top: 1vh;
 	padding-bottom: 1vh;
-	text-align: center;
+	/* 4x4 vh = 16vh*/
+	text-align: left;
     font-family: Cascadia Mono, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
     font-weight: bold;
 }
@@ -76,6 +81,7 @@ nav{
 	color:white;
 }
 #opcoes > a > li:hover {
+	transform: scale(1.1);
 	border: solid 1px #3f3f74;
 	border-radius: 5px;
 	transition: border 1s;
@@ -83,27 +89,29 @@ nav{
 	transition: color 1s;
 }
 #contato{
-	position:absolute;
+	position:fixed;
 	border-top: solid 1px #3f3f74;
 	padding-top: 1vh;
-	min-width: 100%;
-	margin-top: 60%;
+	min-width: 15%;
+	max-width: 15%;
+	margin-top: 90vh;
 }
 #contato > a{
 	text-decoration: none;
 }
 #contato > a > li, #contato > li {
 	list-style: none;
-	margin-left: calc((33% * 3) / 8.8);
+	margin-left: calc((50% - 20px) / 3);
 	display: inline;
 }
 #contato > a > li > img, #contato > li > img{
-	max-width: 2.5vw;
+	max-width: 2vw;
 	border-radius: 100%;
 	border: solid 1px white;
 	opacity: 0.7;
 }
 #contato > a > li > img:hover, #contato > li > img:hover{
+	transform: scale(1.1);
 	border: solid 1px #3f3f74;
 	opacity: 1.0;
 	transition: opacity 1s, border 1s;
@@ -120,13 +128,40 @@ nav{
 	margin-left: 20vw;
 	margin-right: 5vw;
 }
+
 h1{
+	animation-name: animacao; 
+	animation-duration: 6s;
 	margin-left: 30vw;
 	color:white;
 	font-weight: bold;
     font-family: Cascadia Mono, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
 }
-
+#titulo{
+	float:left;
+}
+#barra{
+	display: inline;
+	animation-name: barra;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes animacao{
+	from{
+		opacity: 0.5;
+	}
+	to{
+		opacity: 1.0;
+	}
+}	
+@keyframes barra{
+	from{
+		opacity: 0.0;
+	}
+	to{
+		opacity: 1.0;
+	}
+}
 /****************************CODIGOS PARA TESTES****************************/
 section > p{
     font-family: Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
