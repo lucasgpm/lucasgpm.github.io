@@ -90,11 +90,11 @@ nav{
 }
 #contato{
 	position:fixed;
-	border-top: solid 1px #3f3f74;
-	padding-top: 1vh;
+	border-top: solid 2px #3f3f74;
+	padding-top: 2vh;
 	min-width: 15%;
 	max-width: 15%;
-	margin-top: 90vh;
+	margin-top: 91vh;
 }
 #contato > a{
 	text-decoration: none;
@@ -114,28 +114,29 @@ nav{
 	transform: scale(1.1);
 	border: solid 1px #3f3f74;
 	opacity: 1.0;
-	transition: opacity 1s, border 1s;
+	transition: opacity 0.25s, border 0.25s;
 
 }
 /************************************DESCRICAO******************************************/
-.section{
-	position: relative;
-	margin-top: 5%;
-	background: #1f1f1f;
-	border: solid 1px #3f3f74;
-	border-radius: 1%;
-	padding-bottom: 50vh;
-	margin-left: 20vw;
-	margin-right: 5vw;
-}
-
 h1{
+	margin-top: 2.5%;
 	animation-name: animacao; 
 	animation-duration: 6s;
 	margin-left: 30vw;
 	color:white;
 	font-weight: bold;
     font-family: Cascadia Mono, Courier New, Bazooka, CG Times, AvantGard Md BT, Moderna, sans-serif;
+}
+.section{
+	position: relative;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background: #1f1f1f;
+	border: solid 1px #3f3f74;
+	border-radius: 1%;
+	padding-bottom: 50vh;
+	margin-left: 17.5vw;
+	margin-right: 2.5vw;
 }
 #titulo{
 	float:left;
